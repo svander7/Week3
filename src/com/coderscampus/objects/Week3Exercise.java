@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Week3Exercise {
 		
-	public static void main  (String[] args)  {
+	public static void main(String[] args)  {
 		
 		// This is just for teaching purposes /////////
 		// With respect to imports / packages   ///////
@@ -32,13 +32,14 @@ public class Week3Exercise {
 		String userInput = scanner.nextLine();
 		Integer conInput = Integer.parseInt(userInput);
 		YourNumber num = new YourNumber ();
+		num.conInput = userInput;
 				
 			if (conInput >= 50 && conInput <= 300)	{
-				System.out.println(YourNumber.numberTyped());
+				System.out.println(num.right());
 			} else if (conInput < 50) {
-				System.out.println("Null");
+				System.out.println(num.wrong());
 			} else if (conInput > 300) { 
-				System.out.println("Null");
+				System.out.println(num.wrong());
 			} 
 			
 		scanner.close();
