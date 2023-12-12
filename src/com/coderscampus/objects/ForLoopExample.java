@@ -13,4 +13,22 @@ public class ForLoopExample {
 			
 			System.out.println("Done!");
 		}
+	
+	void incEx1 () {
+		System.out.println("Incrementing Example:");
+		for (int j=0; j<10; j++) { // j++ is the same as j = j + 1
+			System.out.println(j);
+		}
+		
+		System.out.println("Decrementing Example:");
+		for (int j=9; j>=0; j--) { // j-- is the same as j = j - 1
+			System.out.println(j);
+		}
+	}
+	
+	void incEx2 (int j) {
+		System.out.println("Inside incEx2 method j = " + j);
+		
+		
+	}
 }
