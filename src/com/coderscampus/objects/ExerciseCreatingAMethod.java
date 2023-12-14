@@ -15,9 +15,7 @@ public class ExerciseCreatingAMethod {
 			
 			if (conInput >= 50 && conInput <= 300)	{
 				System.out.println(num.right());
-			} else if (conInput < 50) {
-				System.out.println(num.wrong());
-			} else if (conInput > 300) { 
+			} else if (conInput < 50 || conInput > 300) {
 				System.out.println(num.wrong());
 			} 
 		
